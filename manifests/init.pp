@@ -18,7 +18,7 @@ class ssh {
 
   package { ['openssh']:
     ensure  => 'installed',
-    provider => 'zypper']
+    provider => 'zypper'
   }
 
   service { ['sshd']:
@@ -37,4 +37,4 @@ class ssh {
   }
 
 }
-}
+
