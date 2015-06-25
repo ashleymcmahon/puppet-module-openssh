@@ -12,7 +12,6 @@ class openssh {
 
     package { ['openssh']:
       ensure  => 'installed',
-      require => Yumrepo['epel']
     }
 
     service { ['sshd']:
